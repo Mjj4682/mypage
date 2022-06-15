@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>JJ</title>
+    <style>
+        div#wrap{
+            display: flex;
+            font-size: 50px;
+            justify-content: center;
+        }
+        div.d1{
+            padding: 200px;
+            padding-bottom: 50px;
+        }
+        div#img{
+            display: flex;
+            font-size: 50px;
+            justify-content: center;
+        }
+        div.d2{
+            padding-bottom: 50px;
+            padding: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="link">
+        <a href="main.html">Home</a>
+        <a href="jjme.html">JJ</a>
+        <a href="study.html">방명록</a>
+    </div>
+    <h1 style="display: center">항목에 마우스를 올려보세요!</h1>
+    <div id="wrap">
+        <div class="d1 hover" onMouseOver='this.innerHTML="1997년 1월 1일"' onMouseOut='this.innerHTML="생일"'>생일</div>
+        <div class="d1 hover" onMouseOver='this.innerHTML="테니스"' onMouseOut='this.innerHTML="취미"'>취미</div>
+        <div class="d1 hover" onMouseOver='this.innerHTML="일식!"' onMouseOut='this.innerHTML="음식"'>음식</div>
+    </div>
+    <div id="img">
+        <div class="d2 hover" onMouseOver='this.innerHTML="Ed Sheeran"' onMouseOut='this.innerHTML="노래"'>노래</div>
+        <div class="d2 hover" onMouseOver='this.innerHTML="경기도 일산"' onMouseOut='this.innerHTML="사는곳"'>사는곳</div>
+        <div class="d2 hover" onMouseOver='this.innerHTML="백엔드"' onMouseOut='this.innerHTML="진로"'>진로</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        ol{
+            margin: 50px;
+        }
+        li{
+            font-size: 20px;
+            padding: 10px;
+            text-align: left;
+        }
+        a{
+            color:darkgreen;
+        }
+        td{
+            padding: 5px;
+            font-size: 20px;
+        }
+        table.mm{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function mainwrite(){
+            let inname2 = document.getElementById('inname').value;
+            let intext2 = document.getElementById('intext').value;
+            const new_td = document.getElementById('new');
+            const row = new_td.insertRow(new_td.rows.length);
+            const cellname = row.insertCell(0);
+            const celltext = row.insertCell(1);
+            const celldelete = row.insertCell(2);
+            cellname.innerHTML = inname2;
+            celltext.innerHTML = intext2;
+            const deletebtn = "delete";
+            celldelete.innerHTML = deletebtn;
+            celldelete.id = 'newid';
+            row.id = 'newid1'
+            clear()
+            const deleteclear = document.querySelector('#newid');
+            function handledelete(){
+                alert('hi');
+            }
+            deleteclear.addEventListener('click', handledelete);
+        }
+        function clear(){
+            document.getElementById('inname').value = "";
+            document.getElementById('intext').value = "";
+        }
+    </script>
+</head>
+<body>
+    <div class="link">
+        <a href="main.html">Home</a>
+        <a href="jjme.html">JJ</a>
+        <a href="study.html">방명록</a>
+    </div>
+    <p style="margin: 50px; font-size: 20px;">안녕하세요 방명록 작성해주세요!</p>
+    <table>
+        <tr>
+            <td>이름</td>
+            <td><input type="text" size="10" id="inname"></td>
+        </tr>
+        <tr>
+            <td>내용</td>
+            <td><input type="text" size="50" id="intext"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="작성하기" onclick="mainwrite();"></td>
+        </tr>
+    </table><br><br><br>
+    <table id="new" class="mm">
+        <tr style="background-color: cadetblue">
+            <td width="100">이름</td>
+            <td width="400">내용</td>
+            <td width="100">삭제</td>
+        </tr>
+        <tr>
+            <td>문정진</td>
+            <td>안녕하세요</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

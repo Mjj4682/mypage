@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        ol{
+            margin: 50px;
+        }
+        li{
+            font-size: 20px;
+            padding: 10px;
+            text-align: left;
+        }
+        a{
+            color:darkgreen;
+        }
+        td{
+            padding: 5px;
+            font-size: 20px;
+        }
+        table.mm{
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="link">
+        <a href="main.html">Home</a>
+        <a href="jjme.html">JJ</a>
+        <a href="study.html">방명록</a>
+    </div>
+    <p style="margin: 50px; font-size: 20px;">안녕하세요 방명록 작성해주세요!</p>
+    <table>
+        <tr>
+            <td>이름</td>
+            <td><form id="input_name"><input type="text" size="10" id="inname"></form></td>
+        </tr>
+        <tr>
+            <td>내용</td>
+            <td><form id="input_text"><input type="text" size="50" id="intext"></form></td>
+        </tr>
+        <tr>
+            <td></td>
+            <form>
+                <td><input type="button" value="작성하기" id="mainbtn"></td>
+            </form>
+        </tr>
+    </table><br><br><br>
+    <table id="new_table" class="mm">
+        <tr style="background-color: cadetblue">
+            <td width="100">이름</td>
+            <td width="400">내용</td>
+            <td width="100">수정</td>
+            <td width="100">삭제</td>
+        </tr>
+        <tr>
+            <td>문정진</td>
+            <td>안녕하세요</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
